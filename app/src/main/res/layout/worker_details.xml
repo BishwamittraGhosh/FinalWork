@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="worker type"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_electrician"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Electrician" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_gateman"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Gateman" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_Servent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                android:text="Servant" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_watermechanic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                    android:text="WaterMechanic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_Sweeper"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Sweeper" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_Gardener"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_weight="1"
+                    android:onClick="onCheckboxClicked"
+                    android:text="Gardener" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etWorkerDetails_min_salary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="minimum daily salary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="working area"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_azimpur"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Azimpur" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_dhanmondi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Dhanmondi" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_farmgate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Farmgate" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_bonani"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Bonani" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_gulshan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Gulshan" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_newmarker"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="NewMarket" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_mirpur"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Mirpur" />
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_malibag"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Malibag" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_worker_details_workingArea_uttara"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="1"
+                    android:onClick="onWorkingAreaCheckboxClicked"
+                    android:text="Uttora" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_worker_details_submit"
+            android:src="@drawable/_submit" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_search_worker"
+
+            android:title="Search Worker" />
+
+        <item
+            android:id="@+id/nav_inbox"
+
+            android:title="Message box" />
+
+    </group>
+
+
+    <item android:title="Statistics">
+        <menu>
+            <item
+                android:id="@+id/nav_Search_area"
+
+                android:title="Most search area" />
+
+            <item
+                android:id="@+id/nav_search_job"
+
+                android:title="Most search job" />
+
+
+            <item
+                android:id="@+id/nav_rated_worker"
+
+                android:title="Most rated worker" />
+
+
+            <item
+                android:id="@+id/nav_job_in_area"
+
+                android:title="Maxmimum working area" />
+
+
+            <item
+                android:id="@+id/nav_most_job_working"
+
+                android:title="Most rated job" />
+
+
+
+
+        </menu>
+    </item>
+
+    <item android:title="Profile">
+        <menu>
+            <item
+                android:id="@+id/nav_updateAccount"
+
+                android:title="UpdateAccount" />
+
+            <item
+                android:id="@+id/nav_log_out"
+
+                android:title="Log out" />
+
+        </menu>
+    </item>
+</menu>
